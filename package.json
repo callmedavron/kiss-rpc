@@ -1,0 +1,20 @@
+{
+  "name": "kiss-rpc",
+  "version": "1.0.0",
+  "description": "Simple JSON-RPC Framework with no additional package",
+  "main": "server.js",
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "tsc && node dist/app.js"
+  },
+  "keywords": [
+    "json-rpc",
+    "kiss-rpc",
+    "kiss-json-rpc"
+  ],
+  "author": "Davron Fayziyev",
+  "license": "ISC"
+}
