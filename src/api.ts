@@ -3,12 +3,17 @@ export class Api {
 
     constructor(public kissServer: Kiss) { }
 
-    @setKissMethod('test-api-method')
-    myname(params) {
+    @setKissMethod('some-method')
+    handler(params) {
         return params + params;
     }
 
-    start() {
-        this.kissServer.start({ port: 9090 });
+    @setKissMethod(true)
+    defaultNameForRegister(params) {
+        return params * params;
+    }
+
+    start({ port }) {
+        this.kissServer.start({ port });
     }
 }
